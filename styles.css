@@ -1,0 +1,270 @@
+body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  background-color: #CAB9B9;
+
+  font-family: Rubik, sans-serif;
+}
+
+.main {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.main .header {
+  padding: 8px 40px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main .header h2 {
+  color: #000000;
+  font-size: 12px;
+}
+
+.main .title {
+  padding: 10px 0 20px 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .title h2 {
+  margin: 0;
+
+  color: #000000;
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: 0.35rem;
+}
+
+.main .hero {
+  padding: 20px 30px 100px 30px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .hero .spotlight {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.37rem;
+}
+
+.main .hero .spotlight .rect {
+  width: 0.65rem;
+  height: 28.44rem;
+
+  background-color: #000000;
+  border-radius: 0.158rem;
+}
+
+.main .hero .spotlight .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  pointer-events: none;
+  z-index: 2;
+}
+
+.main .hero .spotlight .picture {
+  position: absolute;
+  right: -0.94rem;
+
+  width: 15.41rem;
+  height: 25.99rem;
+
+  object-fit: cover;
+  opacity: 75%;
+}
+
+.main .hero .spotlight h2 {
+  margin: 0;
+
+  color: #e1dedb;
+  font-size: 6.7rem  ;
+  font-weight: 400;
+  letter-spacing: 0.34rem;
+  text-transform: uppercase;
+  font-feature-settings: "frac";
+}
+
+.main .hero .spotlight h1 {
+  margin: 0;
+  
+  color: #170e0e;
+  font-size: 6.7rem;
+  font-weight: 400;
+  letter-spacing: 0.34rem;
+  text-transform: uppercase;
+  font-feature-settings: "frac";
+}
+
+.main .content  {
+  margin: 0 12.625rem;
+  padding: 1.1rem 1.875rem;
+
+  border-top: 1.5px solid #000000;
+
+  background-image: url("imgs/dashed-line.svg");
+  background-repeat: no-repeat;
+  background-position: 11% 23.5%;
+  background-size: 75%;
+}
+
+.main .content h2 {
+  margin: 0;
+  margin-left: -1.875rem;
+  margin-bottom: 2rem;
+
+  color: #000000;
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: 0.35rem;
+  font-feature-settings: "frac";
+}
+
+.main .content .project {
+  padding: 3.55rem 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4.1rem;
+}
+
+.main .content .project:first-of-type {
+  margin-bottom: 0.7rem;
+}
+
+.main .content .project .carrousel {
+  min-width: 30.9rem;
+  height: 19.188rem;
+  background-color: lightgray;
+}
+
+.main .content .project .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main .content .project .info br {
+  display: block; 
+  content: "";
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.main .content .project .info .title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2.5rem;
+
+  color: #000000;
+  font-size: 1.5rem;
+  font-variation-settings: "wght" 550;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main .content .project .info p {
+  margin: 0;
+  margin-bottom: 2rem;
+
+  color: #222222;
+  font-family: Work Sans, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 130%;
+  letter-spacing: -0.013rem;
+}
+
+.main .content .project .info .link {
+  color: #e1dedb;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.38rem;
+  font-feature-settings: "frac";
+}
+
+.main .content .project .info a:hover {
+  text-decoration: none;
+}
+
+.main .about {
+  padding: 80px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .about .card {
+  max-width: 967px;
+  max-height: 388px;
+  padding: 20px 30px;
+
+  background: rgba(225, 222, 219, 0.37);
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.main .about .card .line {
+  width: 5px;
+  margin-left: 20px;
+  margin-right: 25px;
+
+  background-color: #000000;
+}
+
+.main .about .card span {
+  margin: auto 0;
+  color: #000000;
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: 0.35rem;
+}
+
+.main .about .card p {
+  margin: 0;
+  padding: 10px 0;
+
+  color: #222222;
+  font-family: Work Sans, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 130%;
+  letter-spacing: -0.013rem;
+}
+
+.main .about .card p br{
+  display: block; 
+  content: "";
+  margin-top: 0;
+  margin-bottom: 1rem; 
+}
