@@ -2,11 +2,12 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <title>Carla Kalache - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900&family=Work+Sans:ital,wght@0,100..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
   </head>
   <body>
     <div class="main">
@@ -26,8 +27,27 @@
             <h2>Graphic</h2>
             <h1>Designer</h1>
           </div>
-          <img class="picture" src="imgs/abstract.png" alt="Carla Kalache" />
-        </div>  
+          <div class="picture">
+            <img class="abstract" src="assets/imgs/abstract.png" alt="Carla Kalache" />
+            <img class="human" src="assets/imgs/human.jpeg" alt="Carla Kalache" />
+          </div>
+          <div class="indicator">
+            <dotlottie-player 
+              src="assets/cube-anim.json"
+              background="transparent"
+              speed="1"
+              style="width: 270px; height: 270px;"
+              loop 
+              autoplay
+            >
+            </dotlottie-player>
+            <div class="overlay">
+              <span class="word">HOVER</span>
+              <span class="word">OVER</span>
+              <span class="word">IMAGE</span>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="content">
         <h2>selected projects</h2>
@@ -97,7 +117,7 @@
         </div>
       </div>
       <div class="footer">
-
+        <span>© 2020–2024. c.kalache</span>
       </div>
     </div>
   </body>
