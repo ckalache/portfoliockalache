@@ -149,7 +149,7 @@ body {
 
 .main .hero .spotlight .indicator {
   position: absolute;
-  right: -13rem;
+  right: -14rem;
   bottom: 0;
   
   display: inline-block;
@@ -218,9 +218,59 @@ body {
 }
 
 .main .content .project .carrousel {
-  min-width: 30.9rem;
-  height: 19.188rem;
-  background-color: lightgray;
+  position: relative;
+
+  width: 494px;
+}
+
+.main .content .project .carrousel .items {
+  width: 100%;
+  height: 100%;
+}
+
+.main .content .project .carrousel .control-prev,
+.main .content .project .carrousel .control-next {
+  position: absolute;
+  top: 50%;
+
+  width: 44px;
+  height: 44px;
+
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.main .content .project .carrousel .control-prev {
+  left: 10px;
+}
+
+.main .content .project .carrousel .control-next {
+  right: 10px;
+}
+
+.main .content .project .carrousel .control-prev img,
+.main .content .project .carrousel .control-next img {
+  width: 40px;
+  height: 40px;
+
+  transform: 0.8s ease;
+}
+
+.main .content .project .carrousel .control-prev:hover img,
+.main .content .project .carrousel .control-next:hover img {
+  opacity: 0.8;
 }
 
 .main .content .project .info {
@@ -273,15 +323,27 @@ body {
 }
 
 .main .about {
-  padding: 80px 20px;
+  padding: 0.8rem 1.25rem 5.2rem 1.25rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 2.8rem;
 
   border-top: 1px solid rgba(255, 255, 255, 0.631);
   border-bottom: 1px solid rgba(255, 255, 255, 0.631);
+}
+
+.main .about h2 {
+  margin: 0;
+  
+  color: #000000;
+  font-size: 1.6em;
+  /* font-size: 0.9em; */
+  font-weight: 500;
+  /* letter-spacing: 0.35rem; */
+  letter-spacing: 0.7rem;
 }
 
 .main .about .card {
@@ -297,19 +359,11 @@ body {
 }
 
 .main .about .card .line {
-  width: 5px;
-  margin-left: 20px;
-  margin-right: 25px;
+  width: 0.347rem;
+  margin-left: 5.6rem;
+  margin-right: 1.563rem;
 
   background-color: #000000;
-}
-
-.main .about .card span {
-  margin: auto 0;
-  color: #000000;
-  font-size: 0.9em;
-  font-weight: 500;
-  letter-spacing: 0.35rem;
 }
 
 .main .about .card p {
@@ -324,7 +378,7 @@ body {
   letter-spacing: -0.013rem;
 }
 
-.main .about .card p br{
+.main .about .card p br {
   display: block; 
   content: "";
   margin-top: 0;
@@ -339,4 +393,8 @@ body {
   color: #e1dedb;
   font-size: 9px;
   opacity: 0.5;
+}
+
+.tns-slider {
+  display: flex;
 }

@@ -3,11 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <title>Carla Kalache - Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="styles.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900&family=Work+Sans:ital,wght@0,100..900&display=swap" rel="stylesheet">
+
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
+    <script type="module" src="anim.js"></script>
+    <script type="module" src="carrousel.js"></script>
   </head>
   <body>
     <div class="main">
@@ -35,16 +43,16 @@
             <dotlottie-player 
               src="assets/cube-anim.json"
               background="transparent"
-              speed="1"
+              speed="0.7"
               style="width: 270px; height: 270px;"
               loop 
               autoplay
             >
             </dotlottie-player>
             <div class="overlay">
-              <span class="word">HOVER</span>
-              <span class="word">OVER</span>
-              <span class="word">IMAGE</span>
+              <span>HOVER</span>
+              <span>OVER</span>
+              <span>IMAGE</span>
             </div>
           </div>
         </div>
@@ -52,7 +60,23 @@
       <div class="content">
         <h2>selected projects</h2>
         <div class="project">
-          <div class="carrousel"></div>
+          <div id="wgsn-carrousel" class="carrousel">
+            <div class="items">
+              <img src="assets/imgs/wgsn/01.png" alt="Start by WGSN" />
+              <img src="assets/imgs/wgsn/02.png" alt="Start by WGSN" />
+              <img src="assets/imgs/wgsn/03.png" alt="Start by WGSN" />
+              <img src="assets/imgs/wgsn/04.png" alt="Start by WGSN" />
+              <img src="assets/imgs/wgsn/05.png" alt="Start by WGSN" />
+              <img src="assets/imgs/wgsn/06.png" alt="Start by WGSN" />
+              <img src="assets/imgs/wgsn/07.png" alt="Start by WGSN" />
+            </div>
+            <button class="control-prev">
+              <img src="assets/imgs/arrow-left.svg" alt="Previous" />
+            </button>
+            <button class="control-next">
+              <img src="assets/imgs/arrow-right.svg" alt="Next" />
+            </button>
+          </div>
           <div class="info">
             <a class="title" href="https://blog.startbywgsn.com" target="_blank">
               START BY WGSN
@@ -90,12 +114,26 @@
               www.lacienciaeesporte.com.br
             </a>
           </div>
-          <div class="carrousel"></div>
+          <div id="la-carrousel" class="carrousel">
+            <div class="items">
+              <img src="assets/imgs/la/01.png" alt="L.A. Ciência & Esporte" />
+              <img src="assets/imgs/la/02.png" alt="L.A. Ciência & Esporte" />
+              <img src="assets/imgs/la/03.png" alt="L.A. Ciência & Esporte" />
+              <img src="assets/imgs/la/04.png" alt="L.A. Ciência & Esporte" />
+              <img src="assets/imgs/la/05.png" alt="L.A. Ciência & Esporte" />
+            </div>
+            <button class="control-prev">
+              <img src="assets/imgs/arrow-left.svg" alt="Previous" />
+            </button>
+            <button class="control-next">
+              <img src="assets/imgs/arrow-right.svg" alt="Next" />
+            </button>
+          </div>
         </div>
       </div>
       <div class="about">
+        <h2>about</h2>
         <div class="card">    
-          <span>about</span>
           <div class="line"></div>
           <p>
             With a journey that began in physical product design and evolved into digital,
