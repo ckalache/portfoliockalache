@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
     <title>Carla Kalache - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#D9D9D9" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/mobile.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900&family=Work+Sans:ital,wght@0,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900&family=Work+Sans:ital,wght@0,100..900&family=Shippori+Antique&display=swap" rel="stylesheet">
 
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
@@ -23,19 +25,15 @@
   </head>
   <body>
     <div class="main">
-      <div class="header">
-        <h2>CARLA KALACHE</h2>
-        <h2>carla.kalache@gmail.com</h2>
-      </div>
-      <div class="title">
-        <h2>portfolio</h2>
-      </div>
       <div class="hero" >
+        <h1 class="title">
+          <span>Carla</span>
+          <span>Kalache</span>
+        </h1>
         <div class="spotlight">
-          <div class="rect"></div>
           <div class="text">
-            <h2 id="creative">Creative /</h2>
-            <h2 id="web">Web /</h2>
+            <h2 id="creative">Creative/</h2>
+            <h2 id="web">Web/</h2>
             <h2 id="graphic">Graphic</h2>
             <h1 id="designer">Designer</h1>
           </div>
@@ -48,18 +46,24 @@
               src="assets/cube-anim.json"
               background="transparent"
               speed="0.7"
-              style="width: 270px; height: 270px;"
+              style="width: 200px; height: 200px;"
               loop 
               autoplay
             >
             </dotlottie-player>
             <div class="overlay">
-              <span>HOVER</span>
-              <span>OVER</span>
-              <span>IMAGE</span>
+              <span>TOUCH</span>
+              <span>AND</span>
+              <span>HOLD</span>
             </div>
           </div>
         </div>
+        <img class="arrow" src="assets/icons/arrow.svg" alt="Arrow down" />
+      </div>
+      <div class="section-bar">
+        <h2>Portfolio</h2>
+        <div class="line"></div>
+        <h2>contact@carlakalache.com</h2>
       </div>
       <div class="content">
         <h2>selected projects</h2>
