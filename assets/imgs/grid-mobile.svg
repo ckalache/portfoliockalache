@@ -1,13 +1,13 @@
 <svg width="390" height="505" viewBox="0 0 390 505" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M33.9233 0.396729L33.9234 504.397" stroke="white" stroke-width="0.5"/>
-<path d="M79.9233 0.396729L79.9234 504.397" stroke="white" stroke-width="0.5"/>
-<path d="M125.923 0.396729L125.923 504.397" stroke="white" stroke-width="0.5"/>
-<path d="M170.923 0.396729L170.923 504.397" stroke="white" stroke-width="0.5"/>
-<path d="M216.923 0.396729L216.923 504.397" stroke="white" stroke-width="0.5"/>
-<path d="M262.923 0.396729L262.923 504.397" stroke="#FFFF0A" stroke-width="0.5"/>
-<path d="M307.923 0.396729L307.923 504.397" stroke="white" stroke-width="0.5"/>
-<path d="M355.923 0.396729L355.923 504.397" stroke="white" stroke-width="0.5"/>
-<path d="M-2.18848 504.05H389.812" stroke="white" stroke-width="0.5"/>
+<g clip-path="url(#clip0_10_2)">
+<path d="M33.9229 0.396973L33.923 504.397" stroke="white" stroke-width="0.5"/>
+<path d="M79.9229 0.396973L79.923 504.397" stroke="white" stroke-width="0.5"/>
+<path d="M125.923 0.396973V504.397" stroke="white" stroke-width="0.5"/>
+<path d="M170.923 0.396973V504.397" stroke="white" stroke-width="0.5"/>
+<path d="M216.923 0.396973V504.397" stroke="white" stroke-width="0.5"/>
+<path d="M262.923 0.396973V504.397" stroke="#FFFF0A" stroke-width="0.5"/>
+<path d="M307.923 0.396973V504.397" stroke="white" stroke-width="0.5"/>
+<path d="M355.923 0.396973V504.397" stroke="white" stroke-width="0.5"/>
 <path d="M-2.18848 458.05H389.812" stroke="white" stroke-width="0.5"/>
 <path d="M-2.18848 412.05H389.812" stroke="white" stroke-width="0.5"/>
 <path d="M-2.18848 367.05H389.812" stroke="#FFFF0A" stroke-width="0.5"/>
@@ -16,7 +16,13 @@
 <path d="M-2.18848 229.05H389.812" stroke="white" stroke-width="0.5"/>
 <path d="M-2.18848 184.05H389.812" stroke="white" stroke-width="0.5"/>
 <path d="M-2.18848 138.05H389.812" stroke="white" stroke-width="0.5"/>
-<path d="M-2.18848 92.05H389.812" stroke="white" stroke-width="0.5"/>
-<path d="M-2.18848 46.05H389.812" stroke="white" stroke-width="0.5"/>
+<path d="M-2.18848 92.0498H389.812" stroke="white" stroke-width="0.5"/>
+<path d="M-2.18848 46.0498H389.812" stroke="white" stroke-width="0.5"/>
 <path d="M-2.18848 0.25H389.812" stroke="white" stroke-width="0.5"/>
+</g>
+<defs>
+<clipPath id="clip0_10_2">
+<rect width="390" height="505" fill="white"/>
+</clipPath>
+</defs>
 </svg>
