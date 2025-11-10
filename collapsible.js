@@ -1,11 +1,10 @@
 var projects = document.getElementsByClassName("project");
 
 for (var i = 0; i < projects.length; i++) {
-  var project = projects[i];
-  var collapsible = project.getElementsByClassName("collapsible")[0];
+  var collapsible = projects[i].getElementsByClassName("collapsible")[0];
 
   collapsible.addEventListener("click", function () {
-    project.classList.toggle("active");
+    this.parentNode.classList.toggle("active");
     
     var content = this.nextElementSibling;
     
