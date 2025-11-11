@@ -251,7 +251,7 @@ body {
     background: url("../assets/imgs/dashed-line-vertical.svg"),
       url("../assets/imgs/dashed-line-horizontal.svg");
       background-repeat: repeat-y, repeat-x;
-      background-position: 1rem 0%, 0% 1.4rem;
+      background-position: 4.2% 0%, 0% 1.4rem;
     
     color: #000000;
     font-family: Shippori Antique, sans-serif;
@@ -263,11 +263,11 @@ body {
       content: url("../assets/imgs/dashed-line-arrow.svg");
       
       position: absolute;
-      top: 0.78rem;
-      left: 1rem;
+      top: 29%;
+      left: 4.2%;
 
       transition: transform 0.2s ease;
-      transform-origin: 0.05rem 55%;
+      transform-origin: 10% 55%;
     }
 
     h6 {
@@ -309,7 +309,7 @@ body {
       background: transparent;
       background: url("../assets/imgs/dashed-line-vertical.svg");
       background-repeat: repeat-y;
-      background-position: 1rem 0%;
+      background-position: 4.2% 0%;
 
       color: #000000;
       font-family: Work Sans, sans-serif;
