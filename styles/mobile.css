@@ -232,7 +232,7 @@ body {
   }
 
   &.active {
-    .collapsible::before {
+    .collapsible .dashed-line-horizontal::before {
       transform: rotate(90deg);
     }
   }
@@ -242,16 +242,11 @@ body {
     
     flex: 1;
     margin: 0 1.37rem 0 1.37rem;  
-    padding: 0 0 0 1.95rem;
+    padding: 0 0 0 0.97rem;
     
     background: transparent;
     border: none;
     outline: none;
-
-    background: url("../assets/imgs/dashed-line-vertical.svg"),
-      url("../assets/imgs/dashed-line-horizontal.svg");
-      background-repeat: repeat-y, repeat-x;
-      background-position: 4.2% 0%, 0% 53%;
     
     color: #000000;
     font-family: Shippori Antique, sans-serif;
@@ -259,36 +254,63 @@ body {
     
     cursor: pointer;
 
-    &::before {
-      content: url("../assets/imgs/dashed-line-arrow.svg");
-      
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+
+    .dashed-line-vertical {
+      margin-right: 0.97rem;
+      width: 0.15rem;
+      background: url("../assets/imgs/dashed-line-vertical.svg");
+      background-repeat: repeat-y;
+    }
+
+    .dashed-line-horizontal {
       position: absolute;
-      top: 29%;
-      left: 4.2%;
+      top: 50%;
+      left: 0;
+      right: 0;
 
-      transition: transform 0.2s ease;
-      transform-origin: 10% 55%;
+      height: 0.15rem;
+      background: url("../assets/imgs/dashed-line-horizontal.svg");
+      background-repeat: repeat-x;
+
+      &::before {
+        content: url("../assets/imgs/dashed-line-arrow.svg");
+        
+        position: absolute;
+        top: -0.6rem;
+        left: 0.97rem;
+
+        transition: transform 0.2s ease;
+        transform-origin: 0.05rem 55%;
+      }
     }
 
-    h6 {
-      margin: 0;
-      margin-bottom: 0.4rem;
+    .info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
-      font-size: 0.84rem;
-      font-weight: 600;
-      letter-spacing: 0.1rem;
-    }
-
-    .skills {
-      width: 100%;
-      margin-bottom: 0.3rem;
-
-      color: #A99898;
-      font-size: 0.56rem;
-      letter-spacing: 0.1rem;
-      text-align: end;
-
-      display: block;
+      h6 {
+        margin: 0;
+        margin-bottom: 0.4rem;
+  
+        font-size: 0.84rem;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+      }
+  
+      .skills {
+        width: 100%;
+        margin-bottom: 0.3rem;
+  
+        color: #A99898;
+        font-size: 0.56rem;
+        letter-spacing: 0.1rem;
+        text-align: end;
+      }
     }
   }
 
