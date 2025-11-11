@@ -232,8 +232,8 @@ body {
   }
 
   &.active {
-    .collapsible .dashed-line-horizontal::before {
-      transform: rotate(90deg);
+    .collapsible::before {
+      transform: translateY(-50%) rotate(90deg);
     }
   }
 
@@ -274,17 +274,18 @@ body {
       height: 0.15rem;
       background: url("../assets/imgs/dashed-line-horizontal.svg");
       background-repeat: repeat-x;
+    }
 
-      &::before {
-        content: url("../assets/imgs/dashed-line-arrow.svg");
-        
-        position: absolute;
-        top: -0.6rem;
-        left: 0.97rem;
+    &::before {
+      content: url("../assets/imgs/dashed-line-arrow.svg");
+      
+      position: absolute;
+      top: 50%;
+      left: 1rem;
 
-        transition: transform 0.2s ease;
-        transform-origin: 0.05rem 55%;
-      }
+      transition: transform 0.2s ease;
+      transform-origin: 0% 50%;
+      transform: translateY(-50%)
     }
 
     .info {

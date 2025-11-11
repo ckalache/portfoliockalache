@@ -4,7 +4,6 @@ tns({
   gutter: 16,
   center: true,
   autoWidth: true,
-  mouseDrag: true,
   controls: false,
   nav: false,
 });
@@ -15,7 +14,6 @@ tns({
   gutter: 16,
   center: true,
   autoWidth: true,
-  mouseDrag: true,
   controls: false,
   nav: false,
 });
