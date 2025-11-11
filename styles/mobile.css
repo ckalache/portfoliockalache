@@ -251,7 +251,7 @@ body {
     background: url("../assets/imgs/dashed-line-vertical.svg"),
       url("../assets/imgs/dashed-line-horizontal.svg");
       background-repeat: repeat-y, repeat-x;
-      background-position: 4.2% 0%, 0% 1.4rem;
+      background-position: 4.2% 0%, 0% 53%;
     
     color: #000000;
     font-family: Shippori Antique, sans-serif;
