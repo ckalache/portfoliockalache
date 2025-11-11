@@ -1,17 +1,21 @@
 tns({
-  container: "#wgsn-carrousel .items",
+  container: "#wgsn-carrousel",
   items: 1,
+  gutter: 16,
+  center: true,
+  autoWidth: true,
+  mouseDrag: true,
+  controls: false,
   nav: false,
-  fixedWidth: 494,
-  prevButton: "#wgsn-carrousel .control-prev",
-  nextButton: "#wgsn-carrousel .control-next"
 });
 
 tns({
-  container: "#la-carrousel .items",
+  container: "#la-carrousel",
   items: 1,
+  gutter: 16,
+  center: true,
+  autoWidth: true,
+  mouseDrag: true,
+  controls: false,
   nav: false,
-  fixedWidth: 494,
-  prevButton: "#la-carrousel .control-prev",
-  nextButton: "#la-carrousel .control-next"
 });
