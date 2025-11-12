@@ -3,10 +3,11 @@ tns({
   items: 1,
   gutter: 16,
   center: true,
+  autoWidth: true,
   controls: false,
   nav: false,
   swipeAngle: false,
-  preventScrollOnTouch: "force"
+  preventScrollOnTouch: "auto"
 });
 
 tns({
@@ -18,5 +19,5 @@ tns({
   controls: false,
   nav: false,
   swipeAngle: false,
-  preventScrollOnTouch: "force"
+  preventScrollOnTouch: "auto"
 });
