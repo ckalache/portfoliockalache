@@ -6,6 +6,7 @@ tns({
   autoWidth: true,
   controls: false,
   nav: false,
+  swipeAngle: false
 });
 
 tns({
@@ -16,4 +17,5 @@ tns({
   autoWidth: true,
   controls: false,
   nav: false,
+  swipeAngle: false
 });

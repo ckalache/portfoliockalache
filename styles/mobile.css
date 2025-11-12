@@ -164,6 +164,10 @@ body {
   margin-top: 6.35rem;
 }
 
+.main .contact {
+  position: sticky;
+}
+
 .main .contact a {
   width: 100%;
   height: 100%;
@@ -242,7 +246,7 @@ body {
     
     flex: 1;
     margin: 0 1.37rem 0 1.37rem;  
-    padding: 0 0 0 0.97rem;
+    padding: 0 0 0 1.94rem;
     
     background: transparent;
     border: none;
@@ -254,45 +258,29 @@ body {
     
     cursor: pointer;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch;
-
-    .dashed-line-vertical {
-      margin-right: 0.97rem;
-      width: 0.15rem;
-      background: url("../assets/imgs/dashed-line-vertical.svg");
-      background-repeat: repeat-y;
-    }
-
-    .dashed-line-horizontal {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      right: 0;
-
-      height: 0.15rem;
-      background: url("../assets/imgs/dashed-line-horizontal.svg");
-      background-repeat: repeat-x;
-    }
-
     &::before {
       content: url("../assets/imgs/dashed-line-arrow.svg");
       
       position: absolute;
       top: 50%;
-      left: 1rem;
+      left: 1.1rem;
 
       transition: transform 0.2s ease;
       transform-origin: 0% 50%;
-      transform: translateY(-50%)
+      transform: translate(-0.1rem, -50%)
     }
 
-    .info {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    &::after {
+      /* dashed lines */
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        url("../assets/imgs/dashed-line-vertical.svg") repeat-y 1rem 0,
+        url("../assets/imgs/dashed-line-horizontal.svg") repeat-x 0 1.35rem;
+      pointer-events: none;
+    }
+
 
       h6 {
         margin: 0;
@@ -311,8 +299,9 @@ body {
         font-size: 0.56rem;
         letter-spacing: 0.1rem;
         text-align: end;
+
+        display: block;
       }
-    }
   }
 
   .collapse {
