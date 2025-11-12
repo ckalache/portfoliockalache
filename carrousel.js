@@ -6,7 +6,8 @@ tns({
   autoWidth: true,
   controls: false,
   nav: false,
-  swipeAngle: false
+  swipeAngle: false,
+  preventScrollOnTouch: "auto"
 });
 
 tns({
@@ -17,5 +18,6 @@ tns({
   autoWidth: true,
   controls: false,
   nav: false,
-  swipeAngle: false
+  swipeAngle: false,
+  preventScrollOnTouch: "auto"
 });

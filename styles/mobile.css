@@ -236,8 +236,8 @@ body {
   }
 
   &.active {
-    .collapsible::before {
-      transform: translateY(-50%) rotate(90deg);
+    .collapsible::after {
+      transform: translateX(-0.05rem) translateY(-50%) rotate(90deg);
     }
   }
 
@@ -259,6 +259,16 @@ body {
     cursor: pointer;
 
     &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        url("../assets/imgs/dashed-line-vertical.svg") repeat-y 1rem 0,
+        url("../assets/imgs/dashed-line-horizontal.svg") repeat-x 0 1.35rem;
+      pointer-events: none;
+    }
+
+    &::after {
       content: url("../assets/imgs/dashed-line-arrow.svg");
       
       position: absolute;
@@ -270,38 +280,26 @@ body {
       transform: translate(-0.1rem, -50%)
     }
 
-    &::after {
-      /* dashed lines */
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        url("../assets/imgs/dashed-line-vertical.svg") repeat-y 1rem 0,
-        url("../assets/imgs/dashed-line-horizontal.svg") repeat-x 0 1.35rem;
-      pointer-events: none;
+    h6 {
+      margin: 0;
+      margin-bottom: 0.4rem;
+
+      font-size: 0.84rem;
+      font-weight: 600;
+      letter-spacing: 0.1rem;
     }
 
+    .skills {
+      width: 100%;
+      margin-bottom: 0.3rem;
 
-      h6 {
-        margin: 0;
-        margin-bottom: 0.4rem;
-  
-        font-size: 0.84rem;
-        font-weight: 600;
-        letter-spacing: 0.1rem;
-      }
-  
-      .skills {
-        width: 100%;
-        margin-bottom: 0.3rem;
-  
-        color: #A99898;
-        font-size: 0.56rem;
-        letter-spacing: 0.1rem;
-        text-align: end;
+      color: #A99898;
+      font-size: 0.56rem;
+      letter-spacing: 0.1rem;
+      text-align: end;
 
-        display: block;
-      }
+      display: block;
+    }
   }
 
   .collapse {
@@ -321,7 +319,7 @@ body {
       background: transparent;
       background: url("../assets/imgs/dashed-line-vertical.svg");
       background-repeat: repeat-y;
-      background-position: 4.2% 0%;
+      background-position: 1rem 0%;
 
       color: #000000;
       font-family: Work Sans, sans-serif;
