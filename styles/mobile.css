@@ -1,3 +1,8 @@
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 body {
   width: 100vw;
   min-height: 100vh;
@@ -17,6 +22,8 @@ body {
   align-items: stretch;
   justify-content: flex-start;
   overflow-x: hidden;
+
+  scrollbar-gutter: stable;
 }
 
 .main .hero {
@@ -524,16 +531,12 @@ body {
       max-height: 3.55rem;
     }
 
-    .pink, .wgsn {
+    .vs, .wgsn {
       opacity: 80%;
     }
 
     .ch {
       opacity: 90%;
-    }
-
-    .hope {
-      opacity: 70%;
     }
   }
 }

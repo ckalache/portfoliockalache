@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Carla Kalache - Portfolio</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900&family=Work+Sans:ital,wght@0,100..900&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
+    <script type="module" src="anim.js"></script>
+    <script type="module" src="carrousel.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <h2>CARLA KALACHE</h2>
+        <h2>carla.kalache@gmail.com</h2>
+      </div>
+      <div class="title">
+        <h2>portfolio</h2>
+      </div>
+      <div class="hero" >
+        <div class="spotlight">
+          <div class="rect"></div>
+          <div class="text">
+            <h2 id="creative">Creative /</h2>
+            <h2 id="web">Web /</h2>
+            <h2 id="graphic">Graphic</h2>
+            <h1 id="designer">Designer</h1>
+          </div>
+          <div class="picture">
+            <img class="abstract" src="assets/imgs/abstract.png" alt="Carla Kalache" />
+            <img class="human" src="assets/imgs/human.jpeg" alt="Carla Kalache" />
+          </div>
+          <div class="indicator">
+            <dotlottie-player 
+              src="assets/cube-anim.json"
+              background="transparent"
+              speed="0.7"
+              style="width: 270px; height: 270px;"
+              loop 
+              autoplay
+            >
+            </dotlottie-player>
+            <div class="overlay">
+              <span>HOVER</span>
+              <span>OVER</span>
+              <span>IMAGE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h2>selected projects</h2>
+        <div class="project">
+          <div id="wgsn-carrousel" class="carrousel">
+            <div class="items">
+              <img src="assets/imgs/wgsn/01.png" alt="Start by WGSN" />
+              <img src="assets/imgs/wgsn/02.png" alt="Start by WGSN" />
+              <img src="assets/imgs/wgsn/03.png" alt="Start by WGSN" />
+              <img src="assets/imgs/wgsn/04.png" alt="Start by WGSN" />
+              <img src="assets/imgs/wgsn/05.png" alt="Start by WGSN" />
+              <img src="assets/imgs/wgsn/06.png" alt="Start by WGSN" />
+              <img src="assets/imgs/wgsn/07.png" alt="Start by WGSN" />
+            </div>
+            <button class="control-prev">
+              <img src="assets/imgs/arrow-left.svg" alt="Previous" />
+            </button>
+            <button class="control-next">
+              <img src="assets/imgs/arrow-right.svg" alt="Next" />
+            </button>
+          </div>
+          <div class="info">
+            <a class="title" href="https://blog.startbywgsn.com" target="_blank">
+              START BY WGSN
+            </a>
+            <p>
+              START is a platform created for fashion entrepreneurs who need practical, easy-to-understand, 
+              accurate, and reliable guidance. On the platform, users can find valuable fashion content curated 
+              by WGSN, globally leading company in fashion trend consulting.
+              <br/>
+              This project consisted of redesigning the entire website interface. The focus was on enhancing 
+              usability, aesthetics, and functionality to improve user experience and increase conversion rates.
+            </p>
+            <a class="link" href="https://blog.startbywgsn.com" target="_blank">
+              blog.startbywgsn.com
+            </a>
+          </div>
+        </div>
+        <div class="project">
+          <div class="info">
+            <a class="title" href="https://www.lacienciaeesporte.com.br" target="_blank">
+              L.A. CIÊNCIA & ESPORTE
+            </a>
+            <p>
+              The triathlon coaching company L.A. Ciência & Esporte was born from the desire to create a 
+              training program that fits the reality of amateur athletes. With a philosophy of enjoying 
+              and being passionate about the process instead of the goal, the group attracts and transforms 
+              the life and routine of people that never thought this kind of challenge to be possible.
+              <br/>
+              Here we had a branding project made before the conception of the website, which consisted of 
+              a new logo and detailed comunication strategy.
+              <br/>
+              The website was designed and developed from scratch, using Saas for the execution and hosting.
+            </p>
+            <a class="link" href="https://www.lacienciaeesporte.com.br" target="_blank">
+              www.lacienciaeesporte.com.br
+            </a>
+          </div>
+          <div id="la-carrousel" class="carrousel">
+            <div class="items">
+              <img src="assets/imgs/la/01.png" alt="L.A. Ciência & Esporte" />
+              <img src="assets/imgs/la/02.png" alt="L.A. Ciência & Esporte" />
+              <img src="assets/imgs/la/03.png" alt="L.A. Ciência & Esporte" />
+              <img src="assets/imgs/la/04.png" alt="L.A. Ciência & Esporte" />
+              <img src="assets/imgs/la/05.png" alt="L.A. Ciência & Esporte" />
+            </div>
+            <button class="control-prev">
+              <img src="assets/imgs/arrow-left.svg" alt="Previous" />
+            </button>
+            <button class="control-next">
+              <img src="assets/imgs/arrow-right.svg" alt="Next" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="about">
+        <h2>about</h2>
+        <div class="card">    
+          <div class="line"></div>
+          <p>
+            With a journey that began in physical product design and evolved into digital,
+            I now transform ideas into impactful web experiences. For over 13 years, I worked
+            in the fashion industry creating, designing, and developing products. During the 
+            pandemic, my thirst for innovation led me to transition into the digital realm. 
+            I graduated in Design from Parsons The New School for Design, where I honed a keen 
+            eye for visual and functional solutions.
+            <br/>
+            Developing digital products that combine usability, aesthetics, and accessibility 
+            became a challenge in the industry. By applying clear processes and strategic 
+            creativity, I aim for my designs to be intuitive and practical interfaces, helping 
+            companies connect with their audience in the best possible way through enhanced user 
+            experiences.
+            <br/>
+            I believe good and successful design is about delivering real value for all parties: 
+            both the user and the company.
+          </p>
+        </div>
+      </div>
+      <div class="footer">
+        <span>© 2020–2024. c.kalache</span>
+      </div>
+    </div>
+  </body>
+</html>
